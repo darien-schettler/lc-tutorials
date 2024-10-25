@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "lc-tutorials"
+version = "0.1.0"
+description = "A streamlined package simplifying the complexities of language modeling, enhancing flexibility, speed, modularity, customization, and stability in NLP tasks."
+authors = ["Darien Schettler <ds08tf@gmail.com>", "Darien Schettler <darienschettler@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/darien-schettler/lc_tutorials"
+license = "MIT"
+maintainers = ["Darien Schettler <ds08tf@gmail.com>"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12"
+]
+keywords = ["LLM", "ML", "AI", "NLP", "language model", "modular", "customizable", "framework"]
+packages = [{ include = "lc_tutorials" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain-core = "^0.3.12"
+langchain-community = "^0.3.3"
+langchain-experimental = "^0.3.2"
+langsmith = "^0.1.137"
+langgraph = "^0.2.39"
+openai = "^1.52.2"
+google-generativeai = "^0.8.3"
+cohere = "^5.11.1"
+neo4j = "^5.25.0"
+ruff = "^0.7.1"
+pytest = "^8.3.3"
+jupyterlab = "^4.2.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
